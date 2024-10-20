@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Round Studio</title>
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<style>
+    body{
+        background-image: url("https://bing.img.run/rand_1366x768.php");
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: fixed;
+        background-attachment: fixed;
+        z-index: -1;
+    }
+</style>
+<script src="../js/scroll.js"></script>
+<script src="../js/MainWindow.js"></script>
+<body style="text-align: center;">
+    <div class="background-div"></div>
+	<div class="topbar">
+        <div class="logo">
+            <h1 style="font-size: 20px;color: white;">RMCL - Minecraft Launcher</h1>
+        </div>
+        <div class="menu">
+            <button class="menu-btn" onclick="changeFrameContent('Pages/home.html')">主页</button>  
+            <button class="menu-btn" onclick="changeFrameContent('Pages/Download.html')">下载</button>  
+            <button class="menu-btn" onclick="changeFrameContent('Pages/Setting.html')">设置</button>  
+        </div>
+    </div><br><br><br><br>
+    <iframe id="contentFrame" src="Pages/Home.html">
+</body>
+</html>

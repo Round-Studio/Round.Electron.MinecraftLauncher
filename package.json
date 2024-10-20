@@ -1,0 +1,16 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "main": "app\\index.js",
+  "scripts": {
+    "start": "electron .",
+    "build":"del /s /q release-builds & npx electron-packager ./ nodejs --platform=win32 -arch=x64 --out ./release-builds"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^33.0.1",
+    "electron-packager": "^17.1.2"
+  }
+}
